@@ -28,7 +28,6 @@ public class Pickup : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other) {
-		Debug.Log("HIT");
 		if(other.CompareTag("Player")) {
 			Transform playerTransform = other.transform;
 			Transform hand = FindPlayerHand(playerTransform);//.FindChild("Hand");
