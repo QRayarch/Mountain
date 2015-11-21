@@ -25,6 +25,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 455610}
   - 135: {fileID: 13515892}
+  - 114: {fileID: 11482192}
   m_Layer: 0
   m_Name: FireFly
   m_TagString: FireFly
@@ -57,6 +58,22 @@ Transform:
   - {fileID: 453428}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &11482192
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 177442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bb10e43c96b0094895fd70aa2ea22a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chnageHeadingTime: .5
+  newHeadingChance: .00899999961
+  speed: .300000012
+  minGroundDistance: .5
+  maxGroundDistance: 1.20000005
 --- !u!122 &12226730
 Halo:
   m_ObjectHideFlags: 1
@@ -86,7 +103,23 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: speed
+      value: .0199999996
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: minGroundDistance
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: maxGroundDistance
+      value: 1.20000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: newHeadingChance
+      value: .00899999961
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 177442}
