@@ -5156,10 +5156,11 @@ MonoBehaviour:
     intensity: 0
     color: {r: .227941155, g: .0990364999, b: 0, a: 0}
   endLight:
-    range: 3
-    intensity: 2
+    range: 7
+    intensity: 12
     color: {r: .998073041, g: 1, b: .860294104, a: 0}
   light: {fileID: 10823962}
+  fireflyBounds: {fileID: 0}
 --- !u!114 &11430140
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5199,6 +5200,14 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: range
       value: .400000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: endLight.range
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: endLight.intensity
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
