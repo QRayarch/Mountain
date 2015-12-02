@@ -25,6 +25,7 @@ public class Door : MonoBehaviour {
 		Gizmos.color = Color.green;
 		Gizmos.DrawWireCube(transform.position, transform.localScale);
 		if(travelLocation != null) {
+			Gizmos.DrawLine(transform.position, travelLocation.position);
 			Gizmos.color = Color.red;
 			Gizmos.DrawWireCube(travelLocation.position, travelLocation.localScale);
 		}
