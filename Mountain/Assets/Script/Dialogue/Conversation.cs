@@ -6,13 +6,10 @@ public class Conversation : MonoBehaviour {
 
 	public List<Dialogue> dialogues;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+	public Dialogue GetDialogue(int index) {
+		if(index >= 0 && index < dialogues.Count) {
+			return dialogues[index];
+		}
+		return Dialogue.Empty;
 	}
 }
