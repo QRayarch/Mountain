@@ -4,7 +4,11 @@ using System.Collections.Generic;
 
 public enum Character {
 	Unknown,
-	ImaginaryFriendWorry
+	ImaginaryFriendWorry,
+	ImaginaryFriendAdventure,
+	ImaginaryFriendWorryDifference,
+	RedBeans,
+	RedBeanCommander,
 }
 
 public class CharacterRefernece : MonoBehaviour {
@@ -12,6 +16,7 @@ public class CharacterRefernece : MonoBehaviour {
 	[System.Serializable]
 	public class CharacterDialogueInfo {
 		public Character character;
+		public string textAperance;
 		public Color textColor = Color.white;
 	}
 

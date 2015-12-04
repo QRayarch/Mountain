@@ -2,14 +2,15 @@
 using System.Collections;
 using System.Collections.Generic;
 
-delegate void EnteredNewDialogue(Dialogue dialogue);
+public delegate void EnteredNewDialogue(Dialogue dialogue);
 
 public class DialogueReader : MonoBehaviour {
 
 	private int readIndex = 0;
 	private float readTimer = 0;
 	private List<Conversation> conversations = new List<Conversation>();
-
+	private event EnteredNewDialogue newDialogueEntered;
+	
 	// Use this for initialization
 	void Start () {
 
@@ -21,9 +22,12 @@ public class DialogueReader : MonoBehaviour {
 			readTimer += Time.deltaTime;
 			Dialogue dia = CurrentDialogue;
 			if(readTimer >= dia.duration) {
-				readTimer = 0;
 				if(dia == Dialogue.Empty) {
 					RemoveDialogue();
+					NewDialogue();
+				} else {
+					readIndex++;
+					NewDialogue();
 				}
 			}
 		}
@@ -35,12 +39,22 @@ public class DialogueReader : MonoBehaviour {
 			conversations.Insert(0, con);
 		} else {
 			conversations.Add(con);
+			if(conversations.Count == 1) {
+				NewDialogue();
+			}
 		}
 	}
 
 	void RemoveDialogue() {
 		conversations.RemoveAt(0);
 		ResetReading();
+	}
+
+	void NewDialogue() {
+		readTimer = 0;
+		if(newDialogueEntered != null) {
+			newDialogueEntered.Invoke(CurrentDialogue);
+		}
 	}
 
 	void ResetReading() {
@@ -62,5 +76,10 @@ public class DialogueReader : MonoBehaviour {
 			}
 			return Dialogue.Empty;
 		}
+	}
+
+	public EnteredNewDialogue NewDialogueEntered {
+		get { return newDialogueEntered; }
+		set { newDialogueEntered = value; }
 	}
 }

@@ -41,8 +41,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueInfo:
   - character: 0
+    textAperance: Unknown
     textColor: {r: 1, g: 1, b: 1, a: 1}
   - character: 1
+    textAperance: Worry
+    textColor: {r: .448529422, g: .771805167, b: 1, a: 1}
+  - character: 2
+    textAperance: Adventure
+    textColor: {r: 1, g: .827586234, b: .375, a: 1}
+  - character: 3
+    textAperance: Differnece
+    textColor: {r: 1, g: .566176474, b: .808519363, a: 1}
+  - character: 4
+    textAperance: Red Bean
+    textColor: {r: .948529422, g: .479844213, b: .341749549, a: 1}
+  - character: 5
+    textAperance: Red Bean Commander
+    textColor: {r: .963235319, g: .467940897, b: .410791516, a: 1}
+  - character: 1
+    textAperance: Imaginary Friend Worry
     textColor: {r: 0, g: .586206675, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
