@@ -6,6 +6,7 @@ public class UIDialogue : MonoBehaviour {
 
 	[Header("Setup")]
 	public Text text;
+	public Animator animator;
 	[Header("Config")]
 	public string preCharacter;
 	public string postCharacter;
@@ -14,6 +15,7 @@ public class UIDialogue : MonoBehaviour {
 
 	private DialogueReader reader;
 	private CharacterRefernece charRef;
+	private bool isVisible = false;
 
 	private float textTimer = 0;
 	private float timePerWord = 0;
@@ -43,8 +45,13 @@ public class UIDialogue : MonoBehaviour {
 					text.text += " " + textToAdd[textIndex];
 					textIndex++;
 				}
+			} else {
+				//isVisible = false;
 			}
+		} else {
+			isVisible = false;
 		}
+		animator.SetBool("isVisible", isVisible);
 	}
 
 	void EnteredNewDialogue(Dialogue dialogue) {
@@ -56,6 +63,7 @@ public class UIDialogue : MonoBehaviour {
 			text.text = "";
 			return;
 		}
+		isVisible = true;
 		charInfo = null;
 		textToAdd = dialogue.text.Split(new char[]{' '});
 		if(textToAdd.Length > 0 && dialogue.duration > 0) {
