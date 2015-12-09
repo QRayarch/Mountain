@@ -113,7 +113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb78cb248c18870418c1c1d3b57547dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: .5
+  range: .699999988
   force: -10
 --- !u!1001 &100100000
 Prefab:
@@ -128,7 +128,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: range
-      value: .5
+      value: .699999988
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_LocalPosition.x

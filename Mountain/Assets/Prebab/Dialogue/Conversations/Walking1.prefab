@@ -70,7 +70,7 @@ MonoBehaviour:
     speaker: 2
     sound: {fileID: 0}
     duration: 3
-  - text: "Well I\n was playing a game with my friends, but I think they ditched me.."
+  - text: Well I was playing a game with my friends, but I think they ditched me..
     speaker: 1
     sound: {fileID: 0}
     duration: 3
@@ -181,8 +181,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: dialogues.Array.data[7].text
-      value: "Well I\n was playing a game with my friends, but I think they ditched
-        me.."
+      value: Well I was playing a game with my friends, but I think they ditched me..
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: dialogues.Array.data[7].speaker
