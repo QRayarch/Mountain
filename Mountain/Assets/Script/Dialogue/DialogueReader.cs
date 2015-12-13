@@ -82,4 +82,8 @@ public class DialogueReader : MonoBehaviour {
 		get { return newDialogueEntered; }
 		set { newDialogueEntered = value; }
 	}
+
+	public bool IsReading {
+		get{ return conversations.Count > 0; }
+	}
 }

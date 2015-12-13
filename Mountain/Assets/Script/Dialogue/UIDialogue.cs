@@ -67,7 +67,7 @@ public class UIDialogue : MonoBehaviour {
 		charInfo = null;
 		textToAdd = dialogue.text.Split(new char[]{' '});
 		if(textToAdd.Length > 0 && dialogue.duration > 0) {
-			Debug.Log("W " + textToAdd.Length + " " + ((textToAdd.Length + 1) / dialogue.duration) + " " + ((textToAdd.Length + 1) / dialogue.duration * textApearBeforeFinish));
+//			Debug.Log("W " + textToAdd.Length + " " + ((textToAdd.Length + 1) / dialogue.duration) + " " + ((textToAdd.Length + 1) / dialogue.duration * textApearBeforeFinish));
 			timePerWord = dialogue.duration / (textToAdd.Length + 1) * textApearBeforeFinish; 
 		} else {
 			Debug.LogWarning("--Empty string or duration zero--//");
