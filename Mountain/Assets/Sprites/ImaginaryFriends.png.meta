@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 589a883688f1fb543ae33bc455ad3111
-timeCreated: 1450226166
-licenseType: Pro
+timeCreated: 1450233695
+licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: ImaginaryFriends_0
@@ -18,6 +18,15 @@ TextureImporter:
     21300022: ImaginaryFriends_11
     21300024: ImaginaryFriends_12
     21300026: ImaginaryFriends_13
+    21300028: ImaginaryFriends_14
+    21300030: ImaginaryFriends_15
+    21300032: ImaginaryFriends_16
+    21300034: ImaginaryFriends_17
+    21300036: ImaginaryFriends_18
+    21300038: ImaginaryFriends_19
+    21300040: ImaginaryFriends_20
+    21300042: ImaginaryFriends_21
+    21300044: ImaginaryFriends_22
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -147,7 +156,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 2048
+        y: 3072
         width: 512
         height: 512
       alignment: 0
@@ -157,7 +166,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 512
-        y: 2048
+        y: 3072
         width: 512
         height: 512
       alignment: 0
@@ -167,7 +176,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1024
-        y: 2048
+        y: 3072
         width: 512
         height: 512
       alignment: 0
@@ -177,7 +186,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1536
-        y: 2048
+        y: 3072
         width: 512
         height: 512
       alignment: 0
@@ -187,13 +196,103 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2048
-        y: 2048
+        y: 3072
         width: 512
         height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ImaginaryFriends_13
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3072
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ImaginaryFriends_14
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 3072
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ImaginaryFriends_15
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 3072
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ImaginaryFriends_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2560
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ImaginaryFriends_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2048
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ImaginaryFriends_18
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2048
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ImaginaryFriends_19
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2048
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ImaginaryFriends_20
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2048
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ImaginaryFriends_21
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2048
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ImaginaryFriends_22
       rect:
         serializedVersion: 2
         x: 2560
