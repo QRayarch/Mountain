@@ -19,14 +19,14 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 2800000, guid: 2c1c27ec8c3b75a4c80a795adc9ca788, type: 3}
+          m_Texture: {fileID: 2800000, guid: 5d7ddc4dccacc8140a3013ed06a1580c, type: 3}
           m_Scale: {x: 5, y: 5}
           m_Offset: {x: 0, y: 0}
       data:
         first:
           name: _BumpMap
         second:
-          m_Texture: {fileID: 2800000, guid: 34f07406286974e4ca236867d8d58b51, type: 3}
+          m_Texture: {fileID: 2800000, guid: 85279fd4574f3da46847e26c4c17ac00, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -39,6 +39,13 @@ Material:
       data:
         first:
           name: _ParallaxMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _MetallicGlossMap
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
@@ -71,13 +78,6 @@ Material:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _MetallicGlossMap
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
         first:
@@ -102,7 +102,11 @@ Material:
       data:
         first:
           name: _Glossiness
-        second: .108999997
+        second: .0790000036
+      data:
+        first:
+          name: _Metallic
+        second: .0160000008
       data:
         first:
           name: _BumpScale
@@ -123,10 +127,6 @@ Material:
         first:
           name: _Mode
         second: 0
-      data:
-        first:
-          name: _Metallic
-        second: .0659999996
     m_Colors:
       data:
         first:

@@ -5,6 +5,8 @@ public class KindFriendIntro : DialogueTrigger {
 
 	[Header("Setup")]
 	public Transform friend;
+	public GameObject enableEffect;
+	public GameObject disableEffect;
 
 	[Header("Config")]
 	public float force = 10;
@@ -50,6 +52,12 @@ public class KindFriendIntro : DialogueTrigger {
 		Vector3 velo = new Vector3(0.0f, 1.0f, 0.0f);
 		friendBody.velocity = velo;
 		DialogueReader reader = other.GetComponent<DialogueReader>();
+		if(disableEffect != null) {
+			disableEffect.SetActive(false);
+		}
+		if(enableEffect != null) {
+			enableEffect.SetActive(true);
+		}
 		hasRun = true;
 	}
 }

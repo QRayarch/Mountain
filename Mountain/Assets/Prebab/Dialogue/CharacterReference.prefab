@@ -44,7 +44,7 @@ MonoBehaviour:
     textAperance: 
     textColor: {r: 1, g: 1, b: 1, a: 1}
   - character: 2
-    textAperance: Worry
+    textAperance: Kind Friend
     textColor: {r: .448529422, g: .771805167, b: 1, a: 1}
   - character: 2
     textAperance: Adventure
@@ -93,6 +93,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: dialogueInfo.Array.data[1].textColor.a
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: dialogueInfo.Array.data[1].textAperance
+      value: Kind Friend
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
