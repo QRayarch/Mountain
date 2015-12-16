@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 429086}
   - 114: {fileID: 11420764}
   m_Layer: 0
-  m_Name: Walking1
+  m_Name: KindnessIntro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40,11 +40,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogues:
-  - text: "...I don\u2019t remember this place..."
+  - text: "Um, yes. Hello Luke. I was hoping you might be able to help me find my
+      way off this mountain. You see.. I\u2019m a bit lost\u2026"
+    speaker: 2
+    sound: {fileID: 0}
+    duration: 5
+  - text: "You are? Me too! Sorry I can\u2019t help.."
     speaker: 1
     sound: {fileID: 0}
-    duration: 1.70000005
-  - text: Hello? Is..is somebody there?
+    duration: 3
+  - text: "Oh.. well that\u2019s okay! We can work together! I\u2019m sure we can
+      find a way out!"
+    speaker: 2
+    sound: {fileID: 0}
+    duration: 4
+  - text: Oh!.. Alright!
+    speaker: 1
+    sound: {fileID: 0}
+    duration: 2
+  - text: So how did you get up here Luke?
+    speaker: 2
+    sound: {fileID: 0}
+    duration: 3
+  - text: Well I was playing a game with my friends, but I think they ditched me..
+    speaker: 1
+    sound: {fileID: 0}
+    duration: 3
+  - text: "Well they don\u2019t sound very much like friends to me."
+    speaker: 2
+    sound: {fileID: 0}
+    duration: 3
+  - text: I guess not...
     speaker: 1
     sound: {fileID: 0}
     duration: 2
@@ -57,7 +83,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 0}
       propertyPath: dialogues.Array.size
-      value: 2
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: dialogues.Array.data[1].speaker
@@ -65,23 +91,24 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: dialogues.Array.data[0].speaker
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: dialogues.Array.data[0].text
-      value: "...I don\u2019t remember this place..."
+      value: "Um, yes. Hello Luke. I was hoping you might be able to help me find
+        my way off this mountain. You see.. I\u2019m a bit lost\u2026"
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: dialogues.Array.data[0].duration
-      value: 1.70000005
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: dialogues.Array.data[1].text
-      value: Hello? Is..is somebody there?
+      value: "You are? Me too! Sorry I can\u2019t help.."
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: dialogues.Array.data[1].duration
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: dialogues.Array.data[2].speaker
@@ -89,8 +116,8 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: dialogues.Array.data[2].text
-      value: "Um, yes. Hello Luke. I was hoping you might be able to help me find
-        my way off this mountain. You see.. I\u2019m a bit lost\u2026"
+      value: "Oh.. well that\u2019s okay! We can work together! I\u2019m sure we can
+        find a way out!"
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: dialogues.Array.data[3].speaker
@@ -98,20 +125,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: dialogues.Array.data[3].text
-      value: "You are? Me too! Sorry I can\u2019t help.."
+      value: Oh!.. Alright!
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: dialogues.Array.data[3].duration
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: dialogues.Array.data[2].duration
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: dialogues.Array.data[4].text
-      value: "Oh.. well that\u2019s okay! We can work together! I\u2019m sure we can
-        find a way out!"
+      value: So how did you get up here Luke?
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: dialogues.Array.data[4].speaker
@@ -119,7 +145,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: dialogues.Array.data[4].duration
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: dialogues.Array.data[5].speaker
@@ -127,11 +153,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: dialogues.Array.data[5].text
-      value: Oh!.. Alright!
+      value: Well I was playing a game with my friends, but I think they ditched me..
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: dialogues.Array.data[5].duration
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: dialogues.Array.data[6].speaker
@@ -139,7 +165,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: dialogues.Array.data[6].text
-      value: So how did you get up here Luke?
+      value: "Well they don\u2019t sound very much like friends to me."
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: dialogues.Array.data[6].duration
@@ -147,7 +173,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: dialogues.Array.data[7].text
-      value: Well I was playing a game with my friends, but I think they ditched me..
+      value: I guess not...
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: dialogues.Array.data[7].speaker
@@ -155,19 +181,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: dialogues.Array.data[7].duration
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: dialogues.Array.data[8].text
-      value: "Well they don\u2019t sound very much like friends to me."
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: dialogues.Array.data[8].speaker
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 0}
+      propertyPath: dialogues.Array.data[8].text
+      value: I guess not...
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: dialogues.Array.data[8].speaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: dialogues.Array.data[8].duration
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: dialogues.Array.data[9].text
