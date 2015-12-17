@@ -36,7 +36,7 @@ public class KindFriendIntro : DialogueTrigger {
 				}
 				Destination friendDest = friend.gameObject.GetComponent<Destination>();
 				if(friendDest != null) {
-					friendDest.destination = player.transform;
+					friendDest.transformDest = player.transform;
 				}
 			}
 		}
@@ -47,7 +47,7 @@ public class KindFriendIntro : DialogueTrigger {
 		Debug.Log("GO!!");
 		friendBody = friend.gameObject.AddComponent<Rigidbody>();
 		friendBody.freezeRotation = true;
-		Vector3 translation = (other.transform.position + other.transform.forward * 10.0f) - friend.position;
+		Vector3 translation = (other.transform.position + transform.forward * 10.0f) - friend.position;
 		friendBody.AddForce(translation * force);
 		Vector3 velo = new Vector3(0.0f, 1.0f, 0.0f);
 		friendBody.velocity = velo;

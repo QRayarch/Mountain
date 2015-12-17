@@ -5,7 +5,9 @@ using System.Collections;
 public class Destination : MonoBehaviour {
 
 	public Animator animator;
-	public Transform destination;
+	public Transform transformDest;
+	public Vector3 destination;
+	public bool useTransform = true;
 	private NavMeshAgent agent;
 
 	private Transform trans;
@@ -22,19 +24,25 @@ public class Destination : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(destination == null) return;
-		agent.destination = destination.position;
+		if(transformDest != null && useTransform)  {
+			agent.destination = transformDest.position;
+		} else if(destination != Vector3.zero){
+			agent.destination = destination;
+		}
 		if(animator != null) {
 			animator.SetBool("isWalking", agent.velocity.magnitude > 0);
-			Vector3 delta = trans.position - destination.position;
+			Vector3 delta = trans.position - destination;
 			int dir = -1;
 			if(delta.x > 0 || agent.velocity.magnitude == 0) {
 				dir = 1;
 			}
-			Debug.Log(delta);
 			Vector3 scale = billboardTransform.localScale;
 			scale.x = Mathf.Abs(scale.x) * dir;
 			billboardTransform.localScale = scale;
 		}
+	}
+
+	public bool IsAtLocation {
+		get{ return agent.velocity.magnitude <= 0;}
 	}
 }
