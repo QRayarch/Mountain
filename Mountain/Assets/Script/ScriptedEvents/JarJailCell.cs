@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 [RequireComponent(typeof(Collider))]
 public class JarJailCell : MonoBehaviour {
@@ -7,6 +8,7 @@ public class JarJailCell : MonoBehaviour {
 	[Header("Setup")]
 	public Transform effect;
 	public Transform jailCell;
+	public List<GameObject> enables;
 
 	public RandomWalk walkZone;
 
@@ -43,7 +45,9 @@ public class JarJailCell : MonoBehaviour {
 				if(walkZone != null) {
 					walkZone.RemoveAll();
 				}
-				
+				for(int e = 0; e < enables.Count; e++ ) {
+					enables[e].SetActive(true);
+				}
 				wasTriggered = true;
 			}
 		}

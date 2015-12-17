@@ -10,6 +10,7 @@ public class KindFriendIntro : DialogueTrigger {
 
 	[Header("Config")]
 	public float force = 10;
+	public bool addBody = true;
 
 	private bool hasRun = false;
 	private Rigidbody friendBody;
@@ -39,18 +40,30 @@ public class KindFriendIntro : DialogueTrigger {
 					friendDest.transformDest = player.transform;
 				}
 			}
+		} else if(hasRun && !addBody) {
+			GameObject player = GameObject.FindGameObjectWithTag("Player");
+			DialogueReader reader = player.GetComponent<DialogueReader>();
+			if(reader != null) {
+				TriggerDialogue(reader);
+			}
+			NavMeshAgent friendAgent = friend.gameObject.GetComponent<NavMeshAgent>();
+			if(friendAgent != null) {
+				friendAgent.enabled = true;
+			}
 		}
 	}
 
 	void OnTriggerEnter(Collider other) {
 		if(hasRun || !other.CompareTag("Player")) return;
 		Debug.Log("GO!!");
-		friendBody = friend.gameObject.AddComponent<Rigidbody>();
-		friendBody.freezeRotation = true;
-		Vector3 translation = (other.transform.position + transform.forward * 10.0f) - friend.position;
-		friendBody.AddForce(translation * force);
-		Vector3 velo = new Vector3(0.0f, 1.0f, 0.0f);
-		friendBody.velocity = velo;
+		if(addBody) {
+			friendBody = friend.gameObject.AddComponent<Rigidbody>();
+			friendBody.freezeRotation = true;
+			Vector3 translation = (other.transform.position + transform.forward * 10.0f) - friend.position;
+			friendBody.AddForce(translation * force);
+			Vector3 velo = new Vector3(0.0f, 1.0f, 0.0f);
+			friendBody.velocity = velo;
+		}
 		DialogueReader reader = other.GetComponent<DialogueReader>();
 		if(disableEffect != null) {
 			disableEffect.SetActive(false);

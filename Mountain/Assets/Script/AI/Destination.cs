@@ -42,6 +42,10 @@ public class Destination : MonoBehaviour {
 		}
 	}
 
+	public NavMeshAgent Agent {
+		get{ return agent; }
+	}
+
 	public bool IsAtLocation {
 		get{ return agent.velocity.magnitude <= 0;}
 	}

@@ -5,6 +5,7 @@ public class Door : MonoBehaviour {
 
 	public Transform travelLocation;
 	public bool travelsFriends = false;
+	public bool removesItem = false;
 	public RandomWalk possibleWalk;
 	// Use this for initialization
 	void Start () {
@@ -19,6 +20,12 @@ public class Door : MonoBehaviour {
 	void OnTriggerEnter(Collider other) {
 		if(other.CompareTag("Player")) {
 			other.transform.position = travelLocation.position;
+			if(removesItem && Camera.main.transform.FindChild("Hand").childCount > 0) {
+				Transform item = Camera.main.transform.FindChild("Hand").GetChild(0);
+				if(item) {
+					Destroy(item.gameObject);
+				}
+			}
 			if(travelsFriends) {
 				GameObject[] friends =  GameObject.FindGameObjectsWithTag("Friend");
 				Debug.Log(friends.Length);

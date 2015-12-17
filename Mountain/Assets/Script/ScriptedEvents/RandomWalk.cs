@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class RandomWalk : MonoBehaviour {
 
-	private List<Destination> destinations = new List<Destination>();
+	public List<Destination> destinations = new List<Destination>();
 
 	// Use this for initialization
 	void Start () {
@@ -42,7 +42,6 @@ public class RandomWalk : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other) {
-		Debug.Log(other.tag);
 		Destination dest = other.gameObject.GetComponent<Destination>();
 		if(dest != null) {
 			AddDest(dest);
