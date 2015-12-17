@@ -5,13 +5,14 @@ using System.Collections.Generic;
 public enum Character {
 	Unknown,
 	Luke,
-	ImaginaryFriendWorry,
+	ImaginaryFriendKind,
 	ImaginaryFriendAdventure,
-	ImaginaryFriendWorryDifference,
+	ImaginaryFriendScared,
 	RedBeans,
 	RedBeanCommander,
 	Child1,
 	Child2,
+	Mom,
 }
 
 public class CharacterRefernece : MonoBehaviour {

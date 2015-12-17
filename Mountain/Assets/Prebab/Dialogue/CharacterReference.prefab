@@ -46,13 +46,13 @@ MonoBehaviour:
   - character: 2
     textAperance: Kind Friend
     textColor: {r: .448529422, g: .771805167, b: 1, a: 1}
-  - character: 2
+  - character: 3
     textAperance: Adventure
     textColor: {r: 1, g: .827586234, b: .375, a: 1}
-  - character: 3
-    textAperance: Differnece
-    textColor: {r: 1, g: .566176474, b: .808519363, a: 1}
   - character: 4
+    textAperance: Differnece
+    textColor: {r: .602434039, g: .385380596, b: .79411763, a: 1}
+  - character: 5
     textAperance: Red Bean
     textColor: {r: .948529422, g: .479844213, b: .341749549, a: 1}
   - character: 5
@@ -67,6 +67,9 @@ MonoBehaviour:
   - character: 8
     textAperance: Child 2
     textColor: {r: .911764681, g: .543036342, b: .687984765, a: 1}
+  - character: 9
+    textAperance: Child 2
+    textColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -74,6 +77,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: dialogueInfo.Array.size
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: dialogueInfo.Array.data[1].character
       value: 1
@@ -97,6 +104,46 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: dialogueInfo.Array.data[1].textAperance
       value: Kind Friend
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: dialogueInfo.Array.data[9].character
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: dialogueInfo.Array.data[2].character
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: dialogueInfo.Array.data[3].character
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: dialogueInfo.Array.data[4].character
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: dialogueInfo.Array.data[3].textColor.r
+      value: .602434039
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: dialogueInfo.Array.data[3].textColor.g
+      value: .385380596
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: dialogueInfo.Array.data[3].textColor.b
+      value: .79411763
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: dialogueInfo.Array.data[9].textColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: dialogueInfo.Array.data[9].textColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: dialogueInfo.Array.data[9].textColor.b
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
