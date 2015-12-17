@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 589a883688f1fb543ae33bc455ad3111
-timeCreated: 1450233695
-licenseType: Free
+timeCreated: 1450319613
+licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
     21300000: ImaginaryFriends_0
@@ -27,6 +27,12 @@ TextureImporter:
     21300040: ImaginaryFriends_20
     21300042: ImaginaryFriends_21
     21300044: ImaginaryFriends_22
+    21300046: ImaginaryFriends_23
+    21300048: ImaginaryFriends_24
+    21300050: ImaginaryFriends_25
+    21300052: ImaginaryFriends_26
+    21300054: ImaginaryFriends_27
+    21300056: ImaginaryFriends_28
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -297,6 +303,66 @@ TextureImporter:
         serializedVersion: 2
         x: 2560
         y: 2048
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ImaginaryFriends_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ImaginaryFriends_24
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ImaginaryFriends_25
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ImaginaryFriends_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ImaginaryFriends_27
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ImaginaryFriends_28
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
         width: 512
         height: 512
       alignment: 0
