@@ -65,6 +65,7 @@ public class UIDialogue : MonoBehaviour {
 		}
 		isVisible = true;
 		charInfo = null;
+		Debug.Log(dialogue.text);
 		textToAdd = dialogue.text.Split(new char[]{' '});
 		if(textToAdd.Length > 0 && dialogue.duration > 0) {
 //			Debug.Log("W " + textToAdd.Length + " " + ((textToAdd.Length + 1) / dialogue.duration) + " " + ((textToAdd.Length + 1) / dialogue.duration * textApearBeforeFinish));

@@ -6,6 +6,7 @@ public class Door : MonoBehaviour {
 	public Transform travelLocation;
 	public bool travelsFriends = false;
 	public bool removesItem = false;
+	public bool friendsAllFollow = false;
 	public RandomWalk possibleWalk;
 	// Use this for initialization
 	void Start () {
@@ -41,6 +42,16 @@ public class Door : MonoBehaviour {
 					Destination dest = friends[f].GetComponent<Destination>();
 					if(possibleWalk != null && dest != null) {
 						possibleWalk.AddDest(dest);
+					}
+				}
+			}
+			if(friendsAllFollow) {
+				GameObject[] friends =  GameObject.FindGameObjectsWithTag("Friend");
+				for(int f = 0; f < friends.Length; f++) {
+					Destination dest = friends[f].GetComponent<Destination>();
+					if(dest != null) {
+						dest.useTransform = true;
+						dest.transformDest = other.transform;
 					}
 				}
 			}

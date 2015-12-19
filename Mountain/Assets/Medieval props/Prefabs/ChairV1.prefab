@@ -11,6 +11,7 @@ GameObject:
   - 33: {fileID: 3342100}
   - 23: {fileID: 2341512}
   - 64: {fileID: 6460922}
+  - 208: {fileID: 20834710}
   m_Layer: 0
   m_Name: ChairV1
   m_TagString: Untagged
@@ -25,8 +26,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 158864}
   m_LocalRotation: {x: -4.32977997e-17, y: .707106709, z: .707106829, w: -4.32978063e-17}
-  m_LocalPosition: {x: 1.0812, y: 1e-15, z: -9.86470032}
-  m_LocalScale: {x: .737639308, y: .737639308, z: .737639308}
+  m_LocalPosition: {x: 1.25003052, y: -1, z: -4.9200058}
+  m_LocalScale: {x: .312501401, y: .312501252, z: .312501252}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -73,6 +74,21 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 4300000, guid: b38df436b5a21b34cb786add8d60eb04, type: 3}
+--- !u!208 &20834710
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 158864}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.03400004, y: 1.21300006, z: 2.079}
+  m_MoveThreshold: .100000001
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: .179000005, z: 2.06800008}
+  m_TimeToStationary: .5
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

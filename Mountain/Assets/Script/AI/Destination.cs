@@ -47,6 +47,6 @@ public class Destination : MonoBehaviour {
 	}
 
 	public bool IsAtLocation {
-		get{ return agent.velocity.magnitude <= 0;}
+		get{ return agent.remainingDistance <= 1.0f;}
 	}
 }

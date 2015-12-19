@@ -33,10 +33,12 @@ public class DialogueReader : MonoBehaviour {
 		}
 	}
 
-	public void AddDialogue(Conversation con, bool overRide = false) {
+	public void AddDialogue(Conversation con, bool overRide = true) {
 		if(overRide) {
-			RemoveDialogue();
-			conversations.Insert(0, con);
+			conversations.Clear();
+			ResetReading();
+			conversations.Add(con);
+			NewDialogue();
 		} else {
 			conversations.Add(con);
 			if(conversations.Count == 1) {

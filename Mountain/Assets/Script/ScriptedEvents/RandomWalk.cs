@@ -15,7 +15,7 @@ public class RandomWalk : MonoBehaviour {
 	void Update () {
 		for(int d = 0; d < destinations.Count; d++) {
 			//destinations[d].useTransform = false;
-			if(destinations[d].IsAtLocation) {
+			if(destinations[d].Agent.velocity.magnitude <= 0) {
 				SetNewDest(destinations[d]);
 			}
 		}

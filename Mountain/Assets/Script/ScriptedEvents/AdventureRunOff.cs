@@ -27,7 +27,7 @@ public class AdventureRunOff : MonoBehaviour {
 				if(currentNode + 1 < nodes.Length) {
 					currentNode++;
 					destination.transformDest = nodes[currentNode];
-				} else {
+				} else if(destination.IsAtLocation) {
 					destination.Agent.speed = oldSpeed;
 				}
 			}
